@@ -113,3 +113,52 @@ body {
     display: block;
     margin: 20px auto;
 }
+/* TABLET */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .cart {
+    order: -1; /* cart moves to top */
+    margin-bottom: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
